@@ -28,7 +28,7 @@
 
         <p>
             <label for="number">Enter a Number:</label>
-            <input type="number" placeholder="enter a number" id="number" name="num">
+            <input type="number" placeholder="enter a number" id="number" name="num" min="1" max="8">
         </p>
 
         <button type="button">Acts as a button</button>
@@ -62,11 +62,66 @@
 
     <h2>More Inputs</h2>
     <form action="/forms">
+        <h3>Checkbox Input</h3>
         <input type="checkbox" name="agree_tos" id="agree" checked>
         <label for="agree">I agree to everything</label>
+        
+
+        <h3>Radio Input</h3>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S:</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M:</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+
+        <h3>Select Input</h3>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="steak" selected>Steak</option>
+                <option value="veg">Vegetarian</option>
+            </select>
+        </p>
+
+        <h3>Range Input</h3>
+        <p>
+            <label for="cheese">Amount of Cheese</label>
+            <input type="range" name="cheese_level" id="cheese" min="1" max="10" step="2" value="5">
+        </p>
+
+        <h3>Text Area</h3>
+        <label for="requests">Any Special Requests?</label>
+        <br>
+        <textarea name="requests" id="requests" cols="40" rows="2" placeholder="Type special requests here">
+        </textarea>
+
+        <br><br>
         <button>Submit</button>
     </form>
 
+    <h2>Validations Demo</h2>
+    <p>Use minlength or maxlength for text and min and max for number or range input and date</p>
+    <form action="/dummy">
+        <label for="first">Enter First Name:</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" minlength="8" maxlength="20" required>
+        </p>
+        <br>
+        <h3>Built-In Validations</h3>
+            <label for="email">Enter email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="url">Enter URL:</label>
+            <input type="url" id="url" name="url">
+        <button>Submit</button>
+    </form>
+    
 
     <br>
     <br>
