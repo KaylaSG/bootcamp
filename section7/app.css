@@ -1,0 +1,25 @@
+/* universal selector - selects all elements
+*{
+    background-color: whitesmoke;
+} */
+
+body{
+    background-color: #e0fbfc;
+}
+
+/* element selector */
+button{
+    font-size: 30px;
+    background-color: #3d5a80;
+    color: #e0fbfc;
+}
+
+/* list selectors - select multiple elements */
+h1, h2{
+    color: #ee6c4d;
+}
+
+/* id selector */
+
+
+
