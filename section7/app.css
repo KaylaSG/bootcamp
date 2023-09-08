@@ -92,7 +92,12 @@ section:nth-of-type(2n){
     background-color: lightyellow;
 }
 
- 
+/* PSEUDO ELEMENTS - keyword added to selector that lets you style a particular part of selected elements such as ::first-letter  */
+
+/*::first-letter*/
+h2::first-letter{
+    font-size: 50px;
+}
 
 
 
