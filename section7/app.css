@@ -61,11 +61,40 @@ input[type="password"]{
     color: #3d5a80;
 }
 
+a[href*="google"]{
+    color: orange;
+}
+
 /* or section.post */
 section[class="post"] {
     border: orange;
 }
 
-a[href*="google"]{
-    color: orange;
+/* PSEUDO CLASSES */
+
+ /* hover - when mouse over*/
+button:hover{
+    background-color: orange;
+    color: white;
+ }
+
+ a:hover{
+    text-decoration: underline;
+ }
+
+ /*active - when activated on click*/
+button:active{
+    background-color: teal;
+ }
+
+ /*nth-of-type - chose elements by positon among a group of siblings*/
+section:nth-of-type(2n){
+    background-color: lightyellow;
 }
+
+ 
+
+
+
+
+
