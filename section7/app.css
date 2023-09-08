@@ -25,4 +25,23 @@ h1, h2{
     color: #3d5a80;
 }
 
+span{
+    color: #98c1d9;
+}
 
+/* class selector */
+.tag{
+    background-color: #3d5a80;
+    font-size: 12px;
+    color: #98c1d9;
+}
+
+/* descendant selector - selects all elements that are nested inside parent element */
+span a{
+    color:#ee6c4d;
+}
+
+/* Adjacent selector - select only elements that are immediately preceded by another elements (not children or nested) */
+input + button{
+    background-color: white;
+}
