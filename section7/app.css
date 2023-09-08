@@ -20,6 +20,9 @@ h1, h2{
 }
 
 /* id selector */
-
+#signup{
+    background-color: #e0fbfc;
+    color: #3d5a80;
+}
 
 
