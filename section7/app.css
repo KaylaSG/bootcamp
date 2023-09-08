@@ -100,12 +100,12 @@ h2::first-letter{
 }
 
 /*::first-line*/
-p::first-line{
+main p::first-line{
     color: purple;
 }
 
 /*::selection - any part of selected items*/
-p::selection{
+main p::selection{
     background-color: yellowgreen;
 }
 
