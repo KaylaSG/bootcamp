@@ -49,3 +49,23 @@ input + button{
 h2 + button{
     font-size: 15px;
 }
+
+/* Direct child - select only elements that are direct children of another element */
+footer > a{
+    font-size: bold;
+    color: orange;
+}
+
+/* Attribute selector - select all elements where attribute is set to "certain text" */
+input[type="password"]{
+    color: #3d5a80;
+}
+
+/* or section.post */
+section[class="post"] {
+    border: orange;
+}
+
+a[href*="google"]{
+    color: orange;
+}
