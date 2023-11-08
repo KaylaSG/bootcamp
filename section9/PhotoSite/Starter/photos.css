@@ -2,3 +2,9 @@ img{
     width: 30%;
     margin: calc(10%/6);
 }
+
+nav{
+    text-transform: uppercase;
+    width: 30%;
+    border-bottom: solid
+}
