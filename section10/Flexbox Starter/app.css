@@ -15,11 +15,12 @@ h1 {
     /*Main axis (left to right default)*/
     justify-content: space-evenly;
     flex-wrap: wrap; 
-    /*Cross axis (opposite of maini)*/
+    /*Cross axis (opposite of main)*/
     align-items: center;
 }
 
 #container div{
     width: 200px;
     height: 200px;
+    font-size: 5em;
 }
