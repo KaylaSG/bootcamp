@@ -12,8 +12,11 @@ h1 {
     border: 5px solid #003049;
     display: flex;
     flex-direction: row;
+    /*Main axis (left to right default)*/
     justify-content: space-evenly;
     flex-wrap: wrap; 
+    /*Cross axis (opposite of maini)*/
+    align-items: center;
 }
 
 #container div{
