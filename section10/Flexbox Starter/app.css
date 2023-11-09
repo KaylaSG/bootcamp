@@ -14,13 +14,57 @@ h1 {
     flex-direction: row;
     /*Main axis (left to right default)*/
     justify-content: space-evenly;
-    flex-wrap: wrap; 
+    /* flex-wrap: wrap;  */
     /*Cross axis (opposite of main)*/
     align-items: center;
+    /*align-content controls space around rows or columns - wrap must be used*/
+    align-content: center;
+    /*align-self apply to individual elements*/
+
 }
+
+/*Flex-basis: defines the initial size of an element before additional space is distributed
+Flex-grow: controls the amount of available space an element should take up. Accepts a unit-less number value
+Flex-shring: if items are larger than the container, they shrink according to flex-shrink
+Flex: flex-grow flex-shrink flex-basis*/
 
 #container div{
     width: 200px;
     height: 200px;
     font-size: 5em;
+    flex-basis: 600px;
+
+}
+
+div:nth-of-type(3){
+    align-self: flex-start;
+}
+
+div:nth-of-type(1){
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+div:nth-of-type(5){
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar{
+    background-color: #6930c3;
+    flex: 1 2 300px;
+    border: 2px solid white;
+}
+
+main .maincontent{
+    background-color: #80ffdb;
+    flex: 2 1 800px;
 }
