@@ -79,4 +79,53 @@ if(random > 0.5){
 }
 
 
+const dayOfWeek = prompt("Enter a day").toLowerCase();
+if(dayOfWeek === 'Monday'){
+    console.log('UGHH I HATE MONDAYS')
+}
+else if(dayOfWeek === 'Saturday'){
+    console.log('YAY I LOVE SATURDAYS!')
+}
+else if(dayOfWeek === 'Friday'){
+    console.log('FRIDAYS ARE DECENT, ESPECIALLY AFTER WORK!')
+}
+else{
+    console.log('MEH')
+}
+
+
+// 0-5 - FREE
+// 5-10 - CHILD $10
+// 10-65 ADULT $20
+// 65+ SENIOR $10
+
+const age = 8;
+
+if(age < 5){
+    console.log('You are a baby. You get in for free')
+}else if (age < 10){
+    console.log('You are a child. You pay $10.')
+}
+else if(age < 65){
+    console.log('You are an adult. You pay $20.')
+}
+
+
+
+//Password must be 6+ characters
+//Password cannnot include space
+
+const password = prompt('Please enter a new password');
+
+if(password.length >= 6){
+    if(password.indexOf(' ') === -1){
+        console.log("Valid password")
+    }
+    else{
+        console.log("Password cannot contain spaces")
+    }
+}
+else{
+    console.log("PASSWORD TOO SHORT")
+}
 
