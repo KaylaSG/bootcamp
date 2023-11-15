@@ -1,7 +1,7 @@
 //Arrays are lists
 
 //Makes an empty array
-let colors = [];
+let students = [];
 
 //Array of strings
 let colors=['purple', 'pink', 'blue', 'green']
@@ -10,4 +10,9 @@ let colors=['purple', 'pink', 'blue', 'green']
 let lottoNums = [19, 22, 56, 12, 51]
 
 //Mixed array
-let stuff = [true, 68, 'cat', null]
+let stuff = [true, 68, 'cat', null, undefined]
+
+let days = ['Monday', 'Tuesdsay', 'Wednesday']
+console.log(days.length)
+//3
+
