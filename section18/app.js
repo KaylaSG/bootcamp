@@ -58,4 +58,4 @@ const comments = [
     {username: 'Michael', text: 'hehe', votes: 100},
 ]
 
-comments[1]
+comments[1].text;
